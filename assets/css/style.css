@@ -1,0 +1,66 @@
+:root {
+    /* --- Color Palette --- */
+    --color-primary: #1A1A1B;      /* Oil Carbon - 60% */
+    --color-secondary: #F4F4F4;    /* Clean Shop - 30% */
+    --color-accent: #FF9F1C;       /* Amber Performance - 10% */
+    
+    /* Variations for depth */
+    --color-primary-light: #2A2A2B;
+    --color-accent-hover: #E68A00;
+    --color-text-on-dark: #FFFFFF;
+    --color-text-on-light: #1A1A1B;
+
+    /* --- Typography --- */
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* --- Spacing & Sizing --- */
+    --space-xs: 0.5rem;   /* 8px */
+    --space-sm: 1rem;     /* 16px */
+    --space-md: 1.5rem;   /* 24px */
+    --space-lg: 2.5rem;   /* 40px */
+    
+    /* --- Borders & Shadows --- */
+    --radius-sm: 4px;     /* Bordas mais secas para aspecto industrial */
+    --radius-md: 8px;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text-on-dark);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-secondary);
+}
+
+.card-servico {
+    background-color: var(--color-secondary);
+    color: var(--color-text-on-light);
+    padding: var(--space-md);
+    border-left: 5px solid var(--color-accent); /* Detalhe técnico */
+    border-radius: var(--radius-sm);
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 700;
+    padding: var(--space-sm) var(--space-lg);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+}
