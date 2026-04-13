@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oficiana Senac</title>
-    <meta name="description" content="Page description">
+    <title>Oficina Senac</title>
+    <meta name="description" content="Oficina de Desenvolvimento de sites para carros">
     <meta name="keywords" content="keyword1, keyword2">
     <meta property="og:title" content="Page Title">
     <meta property="og:description" content="Page description">
@@ -16,14 +16,19 @@
     <meta name="twitter:description" content="Page description">
     <meta name="twitter:image" content="https://www.example.com/image.jpg">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/microframework.min.css">
-
+    <link rel="stylesheet" href="assets/css/microframework.css">
 </head>
-<body>
+<body class="bem-cursor">
     <nav class="bem-navbar">
-        <a href="#" class="bem-navbar__brand">Brand</a>
-        <input type="checkbox" id="nav-toggle" class="bem-navbar__checkbox">
-        <label for="nav-toggle" class="bem-navbar__toggle">☰</label>
+        <header>
+            <a href="#" class="bem-navbar__brand">
+                <img src="/assets/imagens/logo/logo.svg" alt="Ofina Senac" class="bem-logo">
+            </a>
+            <ul class="bem-navbar__menu">
+                <li>contato@oficina.com</li>
+                <li>11-9999-88888</li>
+            </ul>
+        </header>
         <ul class="bem-navbar__menu">
             <li class="bem-navbar__item">
                 <a href="#" class="bem-navbar__link bem-navbar__link--active">Home</a>
@@ -33,5 +38,93 @@
             </li>
         </ul>
     </nav>
+    <main>
+        <section class="bem-hero">
+            <div class="bem-hero__titulo">
+                <h1>Oficina Senac</h1>
+                <p>Evite surpresas na estrada! Realizamos revisão preventiva completa, troca de óleo, freios e suspensão. Cuide do seu carro hoje para evitar custos maiores amanhã. Agende sua avaliação!</p>
+                <a href="#contato" class="bem-btn bem-btn--primary">
+                    Orçamento
+                </a>
+            </div>
+            <img src="/assets/imagens/imagem_hero/frente-hero.png" 
+            width="500px" alt="Carro Transparent" 
+            class="bem-hero_imagem"
+            >
+        </section>
+        <nav class="bem-navbar--secundaria">
+            <input type="checkbox" id="nav-toggle" class="bem-navbar__checkbox">
+            <label for="nav-toggle" class="bem-navbar__toggle">☰</label>
+            <ul class="bem-navbar__menu">
+                <li class="bem-navbar__item">
+                    <a href="#" class="bem-navbar__link bem-navbar__link--active">Home</a>
+                </li>
+                <li class="bem-navbar__item">
+                    <a href="#" class="bem-navbar__link">About</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- adcionar mais seções para ter scroll e a position styck-->
+        <section>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+     </main>
+     <footer>
+
+     </footer>
 </body>
 </html>
