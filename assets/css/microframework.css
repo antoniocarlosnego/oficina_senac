@@ -87,7 +87,7 @@ header{
   align-items: center;
   justify-content: center;
   height: 65.75vh;
-  background-image: url(../imagens/imagem_hero/fundo-hero.jpg);
+  background-image: url(../imagens/imagem_hero/garagem3.jpg);
   /*cover = estica e contain manter o tamanho original  */
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ header{
   backdrop-filter: blur(15px);
   position: absolute;
   top: 0;
-  left: 0;
+  left: calc();
   width: 50%;
   height: 100%;
   z-index: 10;
@@ -395,6 +395,12 @@ header{
 .bem-shadow-lg{ box-shadow:var(--bem-shadow-lg) }
 .bem-grid-auto-4{ display:grid;grid-template-columns:repeat(auto-fit, minmax(60px, 1fr))}
 @media(max-width:768px){
+  .bem-hero__titulo{
+    left: 0;
+    width: 100%;
+  }
+  .bem-container--narrow{ width: 100%; max-width: 768px;}
+  .bem-hero_imagem{ display: none;}
   .bem-grid--cols-2,.bem-grid--cols-3,.bem-grid--cols-4 { grid-template-columns: 1fr }
   .bem-navbar__menu{ display:none }
   .bem-navbar__toggle{ display:block; cursor:pointer; margin-left:auto; }
