@@ -15,6 +15,7 @@
     <meta name="twitter:title" content="Page Title">
     <meta name="twitter:description" content="Page description">
     <meta name="twitter:image" content="https://www.example.com/image.jpg">
+    <link rel="stylesheet" href="/assets/imagens/icones/favicon.ico">   
 
     <link rel="preload" href="assets/css/microframework.css" as="style"
             onload="this.rel='stylesheet'">
@@ -95,8 +96,9 @@
     <main>
         <section class="bem-hero">
             <div class="bem-hero__titulo">
-                <h1>Ofica Senac</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere itaque adipisci iste optio inventore incidunt quod natus. Cum quasi hic sapiente aut qui! Maiores dolore alias assumenda distinctio, vel ab?</p>
+                <h1>Oficina Senac</h1>
+                <p>A Oficina SENAC é um centro automotivo especializado em oferecer soluções completas para a manutenção e reparo de veículos nacionais e importados.
+                    Com uma equipe de mecânicos experientes e qualificados, nosso objetivo é garantir a segurança, performance e durabilidade do seu carro.</p>
                 <a href="#contato" class="bem-btn bem-btn--primary">
                     Orçamento
                 </a>
@@ -114,61 +116,114 @@
                     <a href="#" class="bem-navbar__link bem-navbar__link--active">Home</a>
                 </li>
                 <li class="bem-navbar__item">
-                    <a href="#" class="bem-navbar__link">About</a>
+                    <a href="#sobre" class="bem-navbar__link">About</a>
+                </li>
+                <li class="bem-navbar__item">
+                    <a href="#servicos" class="bem-navbar__link">Serviços</a>
+                </li>
+                <li class="bem-navbar__item">
+                    <a href="#equipe" class="bem-navbar__link">Equipe</a>
+                </li>
+                <li class="bem-navbar__item">
+                    <a href="#contato" class="bem-navbar__link">Contato</a>
                 </li>
             </ul>
         </nav>
+        
         <!-- adcionar mais seções para ter scroll e a position styck-->
-        <section class="bem-container">
+        <section class="bem-container" id="servios" >
+            <h2 class="bem-titulo-h2">Nossos Serviços</h2>
+            <div class="bem-grid-auto">            
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="assets/imagens/imagens-servicos/serv-pintura.png" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="/assets/imagens/imagens-servicos/serv-alinhamento.png" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="/assets/imagens/imagens-servicos/serv-troca-de-oleo.png" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="assets/imagens/imagens-servicos/serv-vidro.png" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="image.jpg" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="image.jpg" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
             <div class="bem-card">
-                <img class="bem-card__image" src="image.jpg" alt="Image description">
+                <img class="bem-card__image" src="image.jpg" width="280px" alt="Image description">
                 <div class="bem-card__body">
                     <h3 class="bem-card__title">Title</h3>
                     <p>Description</p>
                 </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
             </div>
+            <div class="bem-card">
+                <img class="bem-card__image" src="image.jpg" width="280px" alt="Image description">
+                <div class="bem-card__body">
+                    <h3 class="bem-card__title">Title</h3>
+                    <p>Description</p>
+                </div>
+                <button class="bem-btn bem-btn--primary">
+                    Saiba Mais
+                </button>
+            </div>
+            </div>
+        </section>
+        <section id="sobre" class="bem-container">
+
+        </section>
+        <section id="equipe" class="bem-container">
+
+        </section>
+        <section id="contato" class="bem-container">
+
         </section>
         <section class="bem-container">
 
