@@ -9,7 +9,7 @@
   --bem-warning:#f59e0b;
   --bem-dark:#1f2937;
   --bem-light:#f3f4f6;
-  --bem-bg:#ffffff;
+  --bem-bg:#1a1a1b;
   --bem-surface:#ffffff;
   --bem-text:#1f2937;
   --bem-text-muted:#6b7280;
@@ -79,6 +79,7 @@ header{
   /*                    x     y      */
   transform: translate(-120px, 0);
   z-index: 1001;
+  width: 100px;
 }
 .bem-hero{
   /*relativo para c ontrolar a posição absoluta dos filhos  */
@@ -129,7 +130,7 @@ header{
   padding:0 var(--bem-spacing-md);
 }
 .bem-container--fluid{ max-width:100% }
-.bem-container--narrow{ max-width:800px }
+.bem-container--narrow{ max-width:600px }
 .bem-grid { display: grid; gap: var(--bem-spacing-md) }
 .bem-btn{
   display:inline-flex;
