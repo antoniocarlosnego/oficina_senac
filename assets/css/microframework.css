@@ -56,7 +56,6 @@
 html{
   scroll-behavior: smooth;
 }
-
 body{
   font-family:var(--bem-font-base);
   line-height:1.5;
@@ -85,6 +84,19 @@ header{
   z-index: 1001;
   width: 100px;
 }
+.icon-marcas{
+  width: 100px;
+}
+.container-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  margin: var(--bem-spacing-sm) 0;
+  padding: var(--bem-spacing-sm);
+}
 .bem-hero{
   /*relativo para c ontrolar a posição absoluta dos filhos  */
   position: relative;
@@ -92,7 +104,7 @@ header{
   align-items: center;
   justify-content: center;
   height: 65.75vh;
-  background-image: url(../imagens/imagem_hero/garagem3.jpg);
+  background-image: url(../imagens/imagem_hero/fundo-hero.jpg);
   /*cover = estica e contain manter o tamanho original  */
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,7 +121,7 @@ header{
   backdrop-filter: blur(15px);
   position: absolute;
   top: 0;
-  left: calc();
+  left: calc(50% /2);
   width: 50%;
   height: 100%;
   z-index: 10;
@@ -130,10 +142,10 @@ header{
 .bem-titulo-h2{
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 20px;
   font-size: 1.5rem;
   color: var(--bem-secondary);
-  justify-content: center;
 }
 .bem-container{
   width:100%;
@@ -157,11 +169,11 @@ header{
   transition:all .2s ease;
   text-decoration:none;
   gap:var(--bem-spacing-sm);
-  margin: var(--bem-spacing-lg) 0;  
+  margin: var(--bem-spacing-lg) 0;
 }
 .bem-btn:hover{ transform:translateY(-1px);box-shadow:var(--bem-shadow-md) }
 .bem-btn:active{ transform:translateY(0) }
-.bem-btn--primary{ background-color:var(--bem-primary);color:#fff; border: 2px solid }
+.bem-btn--primary{ background-color:var(--bem-primary);color:#fff;border: 2px solid var(--bem-tertiary); }
 .bem-btn--primary:hover{ filter:brightness(.9) }
 .bem-btn--secondary{ background-color:var(--bem-secondary);color:#fff }
 .bem-btn--secondary:hover{ filter:brightness(.9) }
@@ -228,7 +240,7 @@ header{
 @keyframes bem-scale-up{ from{ opacity:0;transform:scale(0.95)}to{ opacity:1;transform:scale(1)}}
 .bem-animate-fade-in{ animation:bem-fade-in 0.3s ease forwards}
 .bem-animate-slide-up{ animation:bem-slide-up 0.4s ease forwards}
-.bem-grid-auto{ display:grid;grid-template-columns:repeat(auto-fit, minmax(390px, 1fr));gap:var(--bem-spacing-md)}
+.bem-grid-auto{ display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:var(--bem-spacing-md)}
 .bem-flex-1{ flex:1}
 .bem-flex-wrap{ flex-wrap:wrap}
 .bem-h-screen{ height:100vh}
@@ -411,12 +423,12 @@ header{
     left: 0;
     width: 100%;
   }
-  .bem-container--narrow{ width: 100%; max-width: 768px;}
-  .bem-hero_imagem{ 
+  .bem-container--narrow{ width:100%; max-width:768px ; }
+  .bem-hero_imagem{
     display: none;
   }
   .bem-navbar--secundaria{
-  position:fixed; top: 0;
+    position:fixed; top: 0;
   }
   .bem-logo{
     display: block;
