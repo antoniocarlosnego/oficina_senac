@@ -104,6 +104,7 @@ header{
 }
 #sobre{
   position: relative;
+  height: 300px;
 }
 .sobre-img{
   position: absolute;
