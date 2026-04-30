@@ -137,7 +137,7 @@ header{
   align-items: center;
   justify-content: center;
   height: 65.75vh;
-  background-image: url(/assets/imagens/imagem_hero/garagem.jpg);
+  background-image: url(/assets/imagens/imagem_hero/garagem3.jpg);
   /*cover = estica e contain manter o tamanho original  */
   background-size: cover;
   background-repeat: no-repeat;
@@ -499,6 +499,7 @@ header{
 .img-comp-container {
   position: relative;
   height: 200px; /*should be the same height as the images*/
+  margin: 20x;
 }
 
 .img-comp-img {
@@ -523,16 +524,37 @@ header{
   background-color: #2196F3;
   opacity: 0.7;
   border-radius: 100%;
- clip-path: polygon(40% 0%, 40% 20%, 94% 46%, 99% 51%, 40% 80%, 40% 100%, 0% 50%);
+  background-image: url(../imagens/icones/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 100px;
+  animation: esquerda-direita .2s 3;
 
+}
+/* keyframes */
+@keyframes esquerda-direita {
+  0% {
+    left: 130px;    
+  }
+  50% {
+    left: 135px;
+  }
+  100% {
+    bottom: 111px;  
+  }
+  
 }
 
 .img-comp-overlay::after{
-  content: "<>";
+  content: "After";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 50px;
+  height: 30px;
+  background-color: var(--bem-secondary);
+  font-size: 1.4rem;
 }
 
 .img-comp-overlay{
