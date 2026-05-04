@@ -630,3 +630,34 @@ header{
   }
 }
 
+
+
+/* --- Correcao Navbar Sticky --- */
+#navbar-principal-container,
+#navbar-secundaria-container {
+  display: contents;
+}
+
+/* --- Carrossel Infinito Equipe --- */
+.bem-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  padding: var(--bem-spacing-md) 0;
+}
+.bem-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: bem-marquee 20s linear infinite;
+  gap: var(--bem-spacing-md);
+}
+.bem-carousel-container:hover .bem-carousel-track {
+  animation-play-state: paused;
+}
+.bem-carousel-item {
+  width: 280px;
+  flex-shrink: 0;
+}
+@keyframes bem-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - (var(--bem-spacing-md) / 2))); }
+}
