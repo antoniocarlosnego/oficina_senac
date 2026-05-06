@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="index.html" class="bem-navbar__link">Home</a>
             </li>
             <li class="bem-navbar__item">
-                <a href="index.html#servicos" class="bem-navbar__link">Serviços</a>
+                <a href="servicos.html" class="bem-navbar__link">Serviços</a>
             </li>
             <li class="bem-navbar__item">
                 <a href="index.html#sobre" class="bem-navbar__link">Sobre</a>
@@ -92,10 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="projetos.html" class="bem-navbar__link">Projetos</a>
             </li>
             <li class="bem-navbar__item">
-                <a href="index.html#equipe" class="bem-navbar__link">Equipe</a>
+                <a href="equipe.html" class="bem-navbar__link">Equipe</a>
             </li>
             <li class="bem-navbar__item">
-                <a href="index.html#contato" class="bem-navbar__link">Contato</a>
+                <a href="contato.html" class="bem-navbar__link">Contato</a>
             </li>
         </ul>
     </nav>

@@ -16,6 +16,10 @@
     <meta name="twitter:description" content="Page description">
     <meta name="twitter:image" content="https://www.example.com/image.jpg">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="preload" href="assets/css/microframework.css" as="style"
             onload="this.rel='stylesheet'">
     <noscript>
@@ -132,22 +136,20 @@
             
         </section>
         <section class="bem-container revelar" id="precos">
-            <h2 style="text-align:center">Tabela de Preços</h2>
-            <p style="text-align:center">Resize the browser window to see the effect.</p>
+            <h2 style="text-align:center">Pacote de Preços</h2>
+            <div class="bem-grid-auto">
+                <ul class="price">
+                    <li class="header">Básico</li>
+                    <li class="grey">R$ 99.99</li>
+                    <li>Troca de Óleo</li>
+                    <li>Verificar Pneus</li>
+                    <li>Relatório de Bateria</li>
+                    <li>Inspecção de Freios</li>
+                    <li class="grey"><a href="#" class="button">Solicite Agora</a></li>
+                </ul>
+            
 
-            <div class="columns">
-            <ul class="price">
-                <li class="header">Básico</li>
-                <li class="grey">R$ 99.99</li>
-                <li>Troca de Óleo</li>
-                <li>Verificar Pneus</li>
-                <li>Relatório de Bateria</li>
-                <li>Inspecção de Freios</li>
-                <li class="grey"><a href="#" class="button">Solicite Agora</a></li>
-            </ul>
-            </div>
-
-            <div class="columns">
+            
             <ul class="price">
                 <li class="header">Essencial</li>
                 <li class="grey">R$ 250.00 / ano</li>
@@ -157,9 +159,9 @@
                 <li>Troca de pastilhas de freio</li>
                 <li class="grey"><a href="#" class="button">Solicite Agora</a></li>
             </ul>
-            </div>
+            
 
-            <div class="columns">
+            
             <ul class="price">
                 <li class="header">Premium</li>
                 <li class="grey">R$ 450.00 / ano</li>
@@ -171,6 +173,37 @@
             </ul>
             </div>
         </section>
+
+        <section class="bem-container revelar" id="faq">
+            <h2 class="bem-titulo-h2">Perguntas Frequentes</h2>
+            <div class="bem-faq-container">
+                <details class="bem-faq-item">
+                    <summary class="bem-faq-question">Quais tipos de veículos vocês atendem?</summary>
+                    <div class="bem-faq-answer">
+                        <p>Atendemos todas as marcas e modelos nacionais e importados, com especialização em mecânica geral e eletrônica embarcada.</p>
+                    </div>
+                </details>
+                <details class="bem-faq-item">
+                    <summary class="bem-faq-question">Vocês oferecem garantia nos serviços?</summary>
+                    <div class="bem-faq-answer">
+                        <p>Sim, todos os nossos serviços possuem garantia de 90 dias para mão de obra, além da garantia específica dos fabricantes para as peças substituídas.</p>
+                    </div>
+                </details>
+                <details class="bem-faq-item">
+                    <summary class="bem-faq-question">É necessário agendar um horário?</summary>
+                    <div class="bem-faq-answer">
+                        <p>Recomendamos o agendamento para garantir agilidade no atendimento, mas também recebemos veículos para diagnósticos de emergência conforme disponibilidade.</p>
+                    </div>
+                </details>
+                <details class="bem-faq-item">
+                    <summary class="bem-faq-question">Quais as formas de pagamento?</summary>
+                    <div class="bem-faq-answer">
+                        <p>Aceitamos cartões de crédito (com parcelamento em até 10x), débito, PIX e faturamento para empresas parceiras.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
         <section class="bem-container" id="equipe">
             <h2 class="bem-titulo-h2">Nossa Equipe</h2>
             <div class="bem-carousel-container">

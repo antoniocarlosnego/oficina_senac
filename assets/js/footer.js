@@ -30,22 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h2 class="bem-titulo-h2">Links Úteis</h2>
                 <ul class="bem-navbar__footer">
                     <li>
-                        <a href="index.html/#hero">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="index.html/#servico">Serviços</a>
+                        <a href="servicos.html">Serviços</a>
                     </li>
                     <li>
-                        <a href="index.html/#sobre">Sobre</a>
+                        <a href="index.html#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="index.html/#equipe">Equipe</a>
+                        <a href="equipe.html">Equipe</a>
                     </li>
                     <li>
-                        <a href="index.html/#projetos">Projeto</a>
+                        <a href="projetos.html">Projeto</a>
                     </li>
                     <li>
-                        <a href="index.html/#contato">Contato</a>
+                        <a href="contato.html">Contato</a>
                     </li>
                 </ul>
             </div>

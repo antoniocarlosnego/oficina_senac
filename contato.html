@@ -17,6 +17,10 @@
     <meta name="twitter:image" content="https://www.example.com/image.jpg">
     <link rel="stylesheet" href="/assets/imagens/icones/favicon.ico">   
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="preload" href="assets/css/microframework.css" as="style"
             onload="this.rel='stylesheet'">
     <noscript>
@@ -27,19 +31,40 @@
     <div id="navbar-principal-container"></div>
     <main>        
         <div id="navbar-secundaria-container"></div>
-        <section class="bem-container" id="equipe" >
-            <h2 class="bem-titulo-h2">Contato</h2>
-            <div class="bem-grid-auto">            
-            
-                
+        <section class="bem-container revelar" id="contato-pagina">
+            <h2 class="bem-titulo-h2">Entre em Contato</h2>
+            <div class="bem-form-container">
+                <form class="bem-form-modern">
+                    <div class="bem-form__group">
+                        <label class="bem-form__label">Nome Completo</label>
+                        <input type="text" class="bem-form__input" placeholder="Seu nome...">
+                    </div>
+                    <div class="bem-form__group">
+                        <label class="bem-form__label">E-mail</label>
+                        <input type="email" class="bem-form__input" placeholder="seu@email.com">
+                    </div>
+                    <div class="bem-form__group">
+                        <label class="bem-form__label">Assunto</label>
+                        <select class="bem-form__input">
+                            <option>Orçamento</option>
+                            <option>Dúvida Técnica</option>
+                            <option>Sugestão</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="bem-form__group">
+                        <label class="bem-form__label">Mensagem</label>
+                        <textarea class="bem-form__textarea" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="bem-btn bem-btn--primary bem-btn--block">
+                        Enviar Mensagem
+                    </button>
+                </form>
             </div>
         </section>
-
-
     </main>
-    <footer id="footer-container">
-       
-     </footer>
-     <script src="assets/js/footer.js"></script>
+    <footer id="footer-container"></footer>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

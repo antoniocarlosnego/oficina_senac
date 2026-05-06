@@ -76,4 +76,26 @@ function initComparisons() {
     }
   }
 }
+
+// Inicializa as comparações de imagem
 initComparisons();
+
+// Lógica de Scroll Reveal usando Intersection Observer
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('ativo');
+                // Opcional: parar de observar após ativar
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const elementosRevelar = document.querySelectorAll('.revelar');
+    elementosRevelar.forEach(el => observer.observe(el));
+});
