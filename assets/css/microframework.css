@@ -268,7 +268,6 @@ header{
 .bem-form__input:focus,
 .bem-form__textarea:focus,
 .bem-compare__range:focus-visible{
-  opacity:.01;
   outline:3px solid var(--bem-primary);
   outline-offset:-3px;
 }
@@ -792,4 +791,15 @@ header{
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+
+/* Feedback do Formulário */
+.contato-feedback {
+    display: none;
+    margin-top: 1rem;
+    animation: bem-fade-in 0.3s ease forwards;
+}
+
+.contato-feedback.visivel {
+    display: flex;
 }
