@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="equipe.html" class="bem-navbar__link">Equipe</a>
             </li>
             <li class="bem-navbar__item">
-                <a href="contato.html" class="bem-navbar__link">Contato</a>
+                <a href="contato.php" class="bem-navbar__link">Contato</a>
             </li>
         </ul>
     </nav>
